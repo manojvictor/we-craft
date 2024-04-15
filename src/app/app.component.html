@@ -1,65 +1,78 @@
-<!-- Create Form -->
-<form id="form">
-  <div class="heading-wrapper">
-    <h1>
-      Demo, TM Survey GTP
-    </h1>
-    <h4>Demo of TM integration with survey</h4>
+<div class="main-wrapper">
+  <div class="right">
+    <!-- Create Form -->
+    <form id="form">
+      <div class="heading-wrapper">
+        <h1>
+          Demo, TM Survey GTP
+        </h1>
+        <h4>Demo of TM integration with survey</h4>
+      </div>
+      <div class="content-wrapper">
+        <div class="notice-container">
+          Hi, Manoj. When you submit this form, the owner will see your name and email address.
+        </div>
+
+        <div class="heading">
+          <div class="title">
+            Transportation Planning Shipper Scenario
+          </div>
+          <div class="subtitle">
+            Managed Fleet
+          </div>
+        </div>
+
+        <div class="question-item">
+          <!-- Details -->
+          <div class="form-control">
+            <label for="name" id="label-name">
+              1.Please tell me about the type, number and capacity of trucks and trailers in your fleet.
+            </label>
+            <!-- Input Type Text -->
+            <textarea type="text" id="name" placeholder="Enter your name" rows="4"></textarea>
+            <button type="submit" value="submit">
+              View Chat
+            </button>
+            &nbsp;
+            &nbsp;
+            <button type="submit" value="submit">
+              Update Chat
+            </button>
+          </div>
+        </div>
+
+        <div class="question-item">
+          <div class="form-control">
+            <label for="email" id="label-email">
+              2.Please tell me about the type of locations you deliver to, and any rules or constraints at these
+              locations
+            </label>
+            <!-- Input Type Email-->
+            <textarea type="email" id="email" placeholder="Enter your email" rows="4"></textarea>
+          </div>
+        </div>
+
+        <div class="question-item">
+          <div class="form-control">
+            <label for="comment">
+              3.Provide a user story for the daily planner activities
+            </label>
+
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment" placeholder="Enter your comment here" rows="4"></textarea>
+          </div>
+        </div>
+        <div class="button-wrapper">
+          <!-- Multi-line Text Input Control -->
+          <button type="submit" value="submit">
+            Next
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
-  <div class="content-wrapper">
-    <div class="notice-container">
-      Hi, Manoj. When you submit this form, the owner will see your name and email address.
-    </div>
-
-    <div class="heading">
-      <div class="title">
-        Transportation Planning Shipper Scenario
-      </div>
-      <div class="subtitle">
-        Managed Fleet
-      </div>
-    </div>
-
-    <div class="question-item">
-      <!-- Details -->
-      <div class="form-control">
-        <label for="name" id="label-name">
-          1.Please tell me about the type, number and capacity of trucks and trailers in your fleet.
-        </label>
-        <!-- Input Type Text -->
-        <textarea type="text" id="name" placeholder="Enter your name" rows="4"></textarea><button type="submit"
-          value="submit">
-          View Chat
-        </button>
-      </div>
-    </div>
-
-    <div class="question-item">
-      <div class="form-control">
-        <label for="email" id="label-email">
-          2.Please tell me about the type of locations you deliver to, and any rules or constraints at these locations
-        </label>
-        <!-- Input Type Email-->
-        <textarea type="email" id="email" placeholder="Enter your email" rows="4"></textarea>
-      </div>
-    </div>
-
-    <div class="question-item">
-      <div class="form-control">
-        <label for="comment">
-          3.Provide a user story for the daily planner activities
-        </label>
-
-        <!-- multi-line text input control -->
-        <textarea name="comment" id="comment" placeholder="Enter your comment here" rows="4"></textarea>
-      </div>
-    </div>
-    <div class="button-wrapper">
-      <!-- Multi-line Text Input Control -->
-      <button type="submit" value="submit">
-        Next
-      </button>
-    </div>
+  <div class="left">
+    <h1>Chat Area - WIP</h1>
   </div>
-</form>
+</div>
 <router-outlet></router-outlet>
